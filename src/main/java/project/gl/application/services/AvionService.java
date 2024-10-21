@@ -9,19 +9,19 @@ import project.gl.application.repository.AvionRepository;
 public class AvionService {
     // the CRUD operations will be defined here
 
-    private  AvionRepository avionRepository;
+    private AvionRepository avionRepository;
 
-    //   get all Avions
+    // get all Avions
     public Iterable<Avion> getAllAvions() {
         return avionRepository.findAll();
     }
 
-    //   get Avion by id
+    // get Avion by id
     public Avion getAvionById(int id) {
         return avionRepository.findById(id).orElse(null);
     }
 
-    //   create new Avion
+    // create new Avion
     public Avion createAvion(Avion avion) {
         return avionRepository.save(avion);
     }
@@ -31,11 +31,9 @@ public class AvionService {
         return avionRepository.save(avion);
     }
 
-    //   delete Avion
+    // delete Avion
     public void deleteAvion(int id) {
         avionRepository.deleteById(id);
     }
-
- 
 
 }

@@ -6,6 +6,6 @@ import project.gl.application.models.Passager;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PassagerRespository extends JpaRepository <Passager,Integer> {
+public interface PassagerRepository extends JpaRepository <Passager,Integer> {
 
 }
